@@ -1,0 +1,45 @@
+*{
+  background-color: #2c3a47;
+}
+h1,h3,h4,h5{
+  text-align: center;
+  color: white;
+  font-family: 'Raleway', 'Helvetica Neue', Arial, sans-serif;
+}
+.container {
+
+  width: 100%;
+  max-width: 60em;
+  margin: 0 auto;
+
+}
+
+
+
+
+
+
+.spotify-embeds {
+  text-align: center;
+  width: 100%;
+}
+
+.spotify-embed {
+  background: #282828;
+
+  &:not(:last-of-type) {
+    margin-bottom: 5px;
+  }
+
+  iframe {
+    display: block;
+    transition: opacity 0.125s;
+    .js & {
+      opacity: 0;
+
+      &.loaded {
+        opacity: 1;
+      }
+    }
+  }
+}
